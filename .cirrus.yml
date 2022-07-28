@@ -1,0 +1,11 @@
+task:
+  name: "Kernel deploy.."
+  timeout_in: 2h
+  container:
+      image: panchajanya1999/archlinux:latest
+      cpu: 4
+      memory: 16G
+
+  Build_script:
+      - git clone --depth=1 -b shinka https://github.com/p404-vayu/android_kernel_xiaomi_vayu lv && cd lv
+      - bash build.sh
