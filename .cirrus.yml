@@ -1,5 +1,5 @@
 task:
-  name: "Kernel deploy.."
+  name: "Kernel Build"
   timeout_in: 2h
   container:
       image: panchajanya1999/archlinux:latest
